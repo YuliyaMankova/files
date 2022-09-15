@@ -5,8 +5,8 @@ a = input("Enter the line:")
 print(a)
 for root, dirs, files in os.walk(path):
     print(root)
-    #print(dirs)
-    #print(files)
+    print(dirs)
+    print(files)
     for file in files:
         iter_path = os.path.join(root, file)
         with open(iter_path) as book:
